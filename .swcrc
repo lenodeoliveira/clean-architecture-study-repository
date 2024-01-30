@@ -7,7 +7,7 @@
         "decorators": true,
         "dynamicImport": true
       },
-      "target": "es2020",
+      "target": "es2021",
       "baseUrl": "."
     },
     "module": {
