@@ -25,7 +25,7 @@ const config = {
   collectCoverageFrom: [
     '<rootDir>/src/**/*.ts',
     '!<rootDir>/src/**/*.dto.ts',
-    '!<rootDir>/src/main/**',
+    '!<rootDir>/src/**/*server.ts',
     '!<rootDir>/src/**/*.interface.ts',
     '!**/protocols/**', '!**/test/**'
   ],
