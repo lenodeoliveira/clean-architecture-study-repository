@@ -61,4 +61,15 @@ describe('Create customer usecase', () => {
           "Street is required"
         );
       });
+
+      it("should thrown an error when street is missing", async () => {
+        const customerRepository = MockRepository();
+        const customerCreateUseCase = new CreateCustomerUseCase(customerRepository);
+    
+        input.address.street = "";
+    
+        await expect(customerCreateUseCase.execute(input)).rejects.toThrow(
+          "Street is required"
+        );
+      });
 })
