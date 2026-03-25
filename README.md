@@ -88,12 +88,12 @@ Se precisamos nos comunicar com uma camada de repositório, não podemos conecta
 
 **EX:**
 
-<pre>
+```ts
 input = new CategoryInputDTO("name");
 output = CreateCategoryUseCase(input); // retorna um DTO de output
 jsonResult = CategoryPresenter(output).toJson(); // configura o formato da resposta para um json
 xmlResult = CategoryPresenter(output).toXML(); // configura o formato da resposta para um XML
-</pre>
+```
 
 ## Entities vs DDD
 
